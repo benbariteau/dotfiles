@@ -8,3 +8,5 @@ function mvim() {
     vim -p `git status --porcelain | sed -ne 's/^ M //p'`
 }
 
+# my own binaries
+export PATH=$PATH:$HOME/bin
