@@ -49,6 +49,8 @@ autocmd FileType go autocmd BufWritePre <buffer> Fmt
 call plug#begin('~/.vim/plugged')
 " fugitive is dabes for git stuff
 Plug 'tpope/vim-fugitive'
+" Python mode for python linting and code folding, mostly
+Plug 'klen/python-mode', { 'for': 'python' }
 call plug#end()
 
 if filereadable($HOME . "/.vimrc.local")
