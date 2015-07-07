@@ -38,14 +38,18 @@ set cursorline
 " highlight search terms
 set hlsearch
 
-" enable pathogen for vim plugins
-call pathogen#infect()
 
 " enable go stuff
 set runtimepath+=/usr/lib/go/misc/vim
 
 " auto format go code
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
+
+"vim-plug config
+call plug#begin('~/.vim/plugged')
+" fugitive is dabes for git stuff
+Plug 'tpope/vim-fugitive'
+call plug#end()
 
 if filereadable($HOME . "/.vimrc.local")
     source $HOME/.vimrc.local
