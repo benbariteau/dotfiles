@@ -39,18 +39,14 @@ set cursorline
 set hlsearch
 
 
-" enable go stuff
-set runtimepath+=/usr/lib/go/misc/vim
-
-" auto format go code
-autocmd FileType go autocmd BufWritePre <buffer> Fmt
-
 "vim-plug config
 call plug#begin('~/.vim/plugged')
 " fugitive is dabes for git stuff
 Plug 'tpope/vim-fugitive'
 " Python mode for python linting and code folding, mostly
 Plug 'klen/python-mode', { 'for': 'python' }
+" go mode
+Plug 'fatih/vim-go', { 'for': 'go' }
 call plug#end()
 
 if filereadable($HOME . "/.vimrc.local")
