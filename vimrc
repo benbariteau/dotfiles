@@ -49,6 +49,8 @@ Plug 'klen/python-mode', { 'for': 'python' }
 Plug 'fatih/vim-go', { 'for': 'go' }
 " toml syntax
 Plug 'cespare/vim-toml', { 'for': 'toml' }
+" rust syntax
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 call plug#end()
 
 if filereadable($HOME . "/.vimrc.local")
