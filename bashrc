@@ -10,3 +10,5 @@ function mvim() {
 
 # my own binaries
 export PATH=$PATH:$HOME/bin
+
+export GOPATH=$HOME/go
