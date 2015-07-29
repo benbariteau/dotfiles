@@ -47,6 +47,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'klen/python-mode', { 'for': 'python' }
 " go mode
 Plug 'fatih/vim-go', { 'for': 'go' }
+" toml syntax
+Plug 'cespare/vim-toml', { 'for': 'toml' }
 call plug#end()
 
 if filereadable($HOME . "/.vimrc.local")
