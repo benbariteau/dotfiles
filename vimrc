@@ -60,6 +60,8 @@ Plug 'ekalinin/Dockerfile.vim'
 Plug 'wting/cheetah.vim'
 " toml syntax
 Plug 'cespare/vim-toml'
+" rust syntax
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 call plug#end()
 
 "" Config for python-mode
