@@ -43,11 +43,31 @@ set hlsearch
 call plug#begin('~/.vim/plugged')
 " fugitive is dabes for git stuff
 Plug 'tpope/vim-fugitive'
+
+"" For python development
 " Python mode for python linting and code folding, mostly
 Plug 'klen/python-mode', { 'for': 'python' }
+" Python folding (custom one by me!)
+Plug 'firba1/python-folding.vim'
+
 " go mode
 Plug 'fatih/vim-go', { 'for': 'go' }
+
+"" Syntax highlighting
+" Dockerfile syntax
+Plug 'ekalinin/Dockerfile.vim'
+" Cheetah syntax
+Plug 'wting/cheetah.vim'
+" toml syntax
+Plug 'cespare/vim-toml'
 call plug#end()
+
+"" Config for python-mode
+" ignore line length warnings in python
+let g:pymode_lint_ignore = "E501"
+" default minus pyflakes because it sucks sometimes
+let g:pymode_lint_checkers = ['pep8', 'mccabe']
+
 
 if filereadable($HOME . "/.vimrc.local")
     source $HOME/.vimrc.local
