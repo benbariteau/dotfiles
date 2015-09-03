@@ -53,16 +53,16 @@ Plug 'firba1/python-folding.vim'
 " go mode
 Plug 'fatih/vim-go', { 'for': 'go' }
 
-"" Syntax highlighting
-" Dockerfile syntax
+"" Filetypes
+" Dockerfile
 Plug 'ekalinin/Dockerfile.vim'
-" Cheetah syntax
+" cheetah
 Plug 'wting/cheetah.vim'
-" toml syntax
+" toml
 Plug 'cespare/vim-toml'
-" rust syntax
+" rust
 Plug 'rust-lang/rust.vim'
-" dart syntax
+" dart
 Plug 'dart-lang/dart-vim-plugin'
 call plug#end()
 
