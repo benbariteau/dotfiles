@@ -61,7 +61,9 @@ Plug 'wting/cheetah.vim'
 " toml syntax
 Plug 'cespare/vim-toml'
 " rust syntax
-Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+Plug 'rust-lang/rust.vim'
+" dart syntax
+Plug 'dart-lang/dart-vim-plugin'
 call plug#end()
 
 "" Config for python-mode
