@@ -62,6 +62,8 @@ Plug 'wting/cheetah.vim'
 Plug 'cespare/vim-toml'
 " rust syntax
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+" yaml syntax
+Plug 'avakhov/vim-yaml'
 call plug#end()
 
 "" Config for python-mode
