@@ -71,6 +71,8 @@ call plug#end()
 let g:pymode_lint_ignore = "E501"
 " default minus pyflakes because it sucks sometimes
 let g:pymode_lint_checkers = ['pep8', 'mccabe']
+" disbale the lint window because it causes segfaults
+let g:pymode_lint_cwindow = 0
 
 
 if filereadable($HOME . "/.vimrc.local")
