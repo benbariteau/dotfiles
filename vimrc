@@ -37,10 +37,14 @@ set number
 set cursorline
 " highlight search terms
 set hlsearch
+" reload files when they change (e.g. pre-commit hooks)
+set autoread
 
 
 "vim-plug config
 call plug#begin('~/.vim/plugged')
+" better autoread
+Plug 'djoshea/vim-autoread'
 " fugitive is dabes for git stuff
 Plug 'tpope/vim-fugitive'
 
