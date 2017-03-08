@@ -18,4 +18,4 @@ function grim() {
 export PATH=$PATH:$HOME/bin
 
 # add go binaries to path
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:`go env GOPATH`/bin
