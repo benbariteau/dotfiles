@@ -37,10 +37,14 @@ set number
 set cursorline
 " highlight search terms
 set hlsearch
+" reload files when they change (e.g. pre-commit hooks)
+set autoread
 
 
 "vim-plug config
 call plug#begin('~/.vim/plugged')
+" better autoread
+Plug 'djoshea/vim-autoread'
 " fugitive is dabes for git stuff
 Plug 'tpope/vim-fugitive'
 
@@ -64,6 +68,8 @@ Plug 'cespare/vim-toml'
 Plug 'rust-lang/rust.vim'
 " dart
 Plug 'dart-lang/dart-vim-plugin'
+" yaml syntax
+Plug 'avakhov/vim-yaml'
 call plug#end()
 
 "" Config for python-mode
@@ -71,7 +77,11 @@ call plug#end()
 let g:pymode_lint_ignore = "E501"
 " default minus pyflakes because it sucks sometimes
 let g:pymode_lint_checkers = ['pep8', 'mccabe']
+" disbale the lint window because it causes segfaults
+let g:pymode_lint_cwindow = 0
 
+" prevent line wrapping in git commit message editing
+autocmd FileType gitcommit set textwidth=0
 
 if filereadable($HOME . "/.vimrc.local")
     source $HOME/.vimrc.local

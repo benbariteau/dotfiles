@@ -8,6 +8,10 @@ function mvim() {
     vim -p `git status --porcelain | sed -ne 's/^ M //p'`
 }
 
+function grim() {
+    vim +/$1 -p $(git grep -l $1)
+}
+
 # my own binaries
 export PATH=$PATH:$HOME/bin
 
