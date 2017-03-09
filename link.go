@@ -26,10 +26,15 @@ func main() {
 		filenames = append(filenames, fileInfo.Name())
 	}
 
+	workingDir, err := os.Getwd()
+	if err != nil {
+		panic(err)
+	}
+
 	sourceToDestination := make(map[string]string, len(filenames))
 	for _, filename := range filenames {
-		sourceFilename := filepath.Join(filesDir, filename)
-		destinationFilename := filepath.Join("..", "." + filename)
+		sourceFilename := filepath.Join(workingDir, filesDir, filename)
+		destinationFilename := filepath.Join(workingDir, "..", "." + filename)
 		sourceToDestination[sourceFilename] = destinationFilename
 	}
 
