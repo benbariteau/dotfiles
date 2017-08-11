@@ -1,2 +1,4 @@
 # vim-plug plugins
 files/vim/plugged/
+
+files/vim/.netrwhist
