@@ -6,6 +6,8 @@ alias ls="ls --color=auto"
 
 alias tmx="tmux attach -t"
 
+alias gitsh="tpol git"
+
 function mvim() {
     vim -p `git status --porcelain | sed -ne 's/^ M //p'`
 }
