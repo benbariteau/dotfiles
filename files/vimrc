@@ -83,6 +83,8 @@ let g:pymode_lint_checkers = ['pep8', 'mccabe']
 let g:pymode_lint_cwindow = 0
 " disbale rope because I don't use it and it sometimes hangs
 let g:pymode_rope = 0
+" rustfmt on save
+let g:rustfmt_autosave = 1
 
 " prevent line wrapping in git commit message editing
 autocmd FileType gitcommit set textwidth=0
