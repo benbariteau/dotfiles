@@ -39,6 +39,8 @@ set cursorline
 set hlsearch
 " reload files when they change (e.g. pre-commit hooks)
 set autoread
+" wrap searches around
+set wrapscan
 
 
 "vim-plug config
