@@ -54,7 +54,7 @@ Plug 'tpope/vim-fugitive'
 " Python mode for python linting and code folding, mostly
 Plug 'klen/python-mode', { 'for': 'python' }
 " Python folding (custom one by me!)
-Plug 'firba1/python-folding.vim'
+" Plug 'firba1/python-folding.vim'
 
 " go mode
 Plug 'fatih/vim-go', { 'for': 'go' }
